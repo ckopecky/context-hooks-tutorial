@@ -1,13 +1,88 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+    * {
+        box-sizing: border-box;
+    }
+    
+    body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    
+    .App {
+        max-width: 800px;
+        width: 100%;
+        margin: 0px auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    
+    
+    }
+    
+    nav {
+        border: 5px double black;
+        width: 100%;
+        padding: 0px 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .navbar {
+        width: 100%;
+        display: flex;
+        padding: 0px 20px;
+    }
+    
+    .navbar ul {
+        display: flex;
+        width: 55%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    li {
+        list-style-type: none;
+    }
+    
+    
+    .song-list ul {
+        width: 100%;
+        padding: 0px 20px;
+        margin: 0;
+        border: 5px double black;
+        border-top: 5px double transparent;
+    }
+    
+    .song-list ul li {
+        padding: 0px 20px;
+        margin: 10px;
+        border-radius: 10px;
+    }
+    
+    button {
+        align-self: flex-end;
+        width: 20%;
+    }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+    .artist-form {
+        width: 100%;
+        display: flex;
+        margin-top: 20px;
+
+    }
+
+    .artist-form div{
+        display: flex;
+        margin:10px;
+    }
+
+    .artist-form div input {
+        min-width: 250px;
+    }
+
+    .artist-form button {
+        align-self: center;
+    }

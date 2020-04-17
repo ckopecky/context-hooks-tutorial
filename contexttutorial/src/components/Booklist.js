@@ -9,10 +9,9 @@ class Booklist extends Component {
         return (
             <div className="book-list" style={{background: theme.bg, color: theme.text}}>
                 <ul>
-                    <li style={{background: theme.ui}}>Gone With the Wind</li>
-                    <li style={{background: theme.ui}}>Ready Player One</li>
-                    <li style={{background: theme.ui}}>Legend</li>
-
+                    <li style={{background: theme.ui}}>Margaret Mitchell:  Gone With the Wind</li>
+                    <li style={{background: theme.ui}}>Ernest Cline:  Ready Player One</li>
+                    <li style={{background: theme.ui}}>Marie Lu:  Legend</li>
                 </ul>
                 
             </div>
