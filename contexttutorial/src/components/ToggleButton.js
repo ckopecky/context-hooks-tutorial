@@ -1,16 +1,16 @@
-import React, { Component } from 'react';
+import React, { useContext } from 'react';
 import { ThemeContext } from '../context/ThemeContext';
 
-class ToggleButton extends Component {
-    static contextType = ThemeContext;
-    render() {
-        const { theme, toggle } = this.context;
-        return (
-            <button style={{background: theme.button, borderRadius: '20px', color: theme.text}} onClick={toggle}>
-                {theme.name}
-            </button>
-        );
-    }
-}
+
+const ToggleButton = () => {
+    const {theme, toggle} = useContext(ThemeContext);
+    console.log(theme, toggle)
+
+    return (
+        <button onClick={toggle} style={{background: theme.bg, color: theme.text, borderRadius: '20px'}}>
+            {theme.name}
+        </button>
+    );
+};
 
 export default ToggleButton;
